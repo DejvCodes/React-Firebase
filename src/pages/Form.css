@@ -1,0 +1,29 @@
+.form {
+  min-height: 87vh;
+}
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+input {
+  width: 250px;
+  font-size: 18px;
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0, 0.5);
+  outline: none;
+}
+input[type="submit"] {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+input[type="submit"]:hover {
+  transform: scale(1.05);
+}

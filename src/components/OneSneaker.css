@@ -1,0 +1,79 @@
+.one-sneaker {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: fit-content;
+  text-transform: uppercase;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  transition: all 0.2s linear;
+  padding: 24px;
+}
+.one-sneaker:hover {
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+}
+.one-sneaker img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.one-sneaker h3 {
+  font-size: 18px;
+  margin-bottom: 7px;
+}
+.one-sneaker h2 {
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.one-sneaker .price-and-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.one-sneaker .price-and-btn p {
+  font-size: 16px;
+}
+svg {
+  font-size: 20px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+svg:hover {
+  transform: translateY(-3px);
+}
+.delete-btn {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.35);
+  transition: all 0.2s linear;
+  padding: 3px 7px;
+  cursor: pointer;
+}
+.delete-btn:hover {
+  border: 1px solid rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* ------- RESPONSIVE DESIGN ------- */
+@media screen and (max-width: 1250px) {
+  .one-sneaker img {
+    height: 160px;
+    margin-bottom: 15px;
+  }
+  .one-sneaker h2 {
+    height: 55px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (max-width: 570px) {
+  .one-sneaker img {
+    height: 75%;
+  }
+}
